@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: Montserrat;
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  margin: 3rem 2rem;
+  border-radius: 1rem;
+}
+
+.caixa-imagem {
+  height: 30vh;
+  background-image: url(./images/image-product-mobile.jpg);
+  background-size: cover;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.caixa-conteudo {
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+  padding: 2rem;
+  max-height: 65vh;
+}
+
+.caixa-conteudo h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding-top: 1rem;
+}
+
+.caixa-conteudo h1,
+.caixa-precos :first-child {
+  font-family: Fraunces;
+  font-size: 3.2rem;
+}
+
+.caixa-conteudo h2,
+.caixa-conteudo p {
+  color: hsl(228, 12%, 48%);
+}
+
+.caixa-conteudo p {
+  line-height: 2.4rem;
+}
+
+.caixa-precos {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.caixa-precos :first-child {
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+
+.caixa-precos :last-child {
+  text-decoration: line-through;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 1rem;
+  border: none;
+  padding: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+button img {
+  transform: translate(0, 0.4rem);
+  padding-right: 1rem;
+}
+
+button:hover{
+  background-color: hsl(158, 42%, 18%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    display: flex;
+    flex-flow: row;
+    border-radius: 1rem;
+    max-width: 60rem;
+    width: 95%;
+    margin: 30rem auto;
+  }
+  
+  .caixa-imagem {
+    background: url(./images/image-product-desktop.jpg);
+    width: 50%;
+    height: auto;
+    background-size: cover;
+    border-radius: 0;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+  
+  .caixa-conteudo {
+    width: 50%;
+  }
+  
+  .caixa-conteudo h1 {
+    font-size: 4rem;
+  }
+}
